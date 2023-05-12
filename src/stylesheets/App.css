@@ -26,6 +26,22 @@
   font-weight: 400;
 }
 
+.weightBold {
+  font-weight: 600;
+}
+
+.weightBolder {
+  font-weight: 800;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
 path {
   color: var(--secondary);
 }
