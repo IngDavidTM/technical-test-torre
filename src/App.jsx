@@ -1,5 +1,5 @@
 import './stylesheets/App.css'
-import UserPage from './components/UserPage'
+import UserPage from './pages/UserPage'
 
 const App= () => {
   return (
