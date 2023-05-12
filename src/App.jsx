@@ -1,4 +1,4 @@
-import './App.css'
+import './stylesheets/App.css'
 import UserPage from './components/UserPage'
 
 const App= () => {

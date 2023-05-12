@@ -1,14 +1,19 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faSearch, faPersonBiking, faPersonRunning, faPersonWalking, faChild } from '@fortawesome/free-solid-svg-icons';
+import '../stylesheets/pages/UserPage.css';
 
 const UserPage = () => {
   return (
     <>
-      <nav>
-        <FontAwesomeIcon icon={faBars} />
-        <h1>torre.co</h1>
-        <FontAwesomeIcon icon={faSearch} />
-        <a href="https://torre.co/?r=eJTS6tfg" target="_blank" rel="noreferrer">SIGN IN</a>
+      <nav className="navBar flex">
+        <div className="flex">
+          <FontAwesomeIcon icon={faBars} />
+          <h1>torre<span className='textYellow weightNormal'>.co</span></h1>
+        </div>
+        <div className="flex">
+          <FontAwesomeIcon icon={faSearch} />
+          <a className="textYellow weightLight" href="https://torre.co/?r=eJTS6tfg" target="_blank" rel="noreferrer">SIGN IN</a>
+        </div>
       </nav>
       <section>
         <header>
