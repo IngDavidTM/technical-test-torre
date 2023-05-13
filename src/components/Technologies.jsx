@@ -1,10 +1,7 @@
-import { useContext, useEffect } from 'react'
-import { AppContext } from '../context/AppContext'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faWeightHanging} from '@fortawesome/free-solid-svg-icons';
 
-const Technologies = ({level, data}) => {
-
+const Technologies = ({level, data,  handleModal}) => {
   if (data.strengths) {
     const dataFiltered = data.strengths.filter((strength) => {
       return strength.proficiency === level;
@@ -15,19 +12,21 @@ const Technologies = ({level, data}) => {
       );
     } else {
       return (
-        <ul className="technologies flex">
-          {dataFiltered.map((strength) => {
-            return (
-              <li key={strength.id}><button>
-                {strength.name}
-                {" "}
-                {strength.weight !== 0 ? <FontAwesomeIcon icon={faWeightHanging} /> : ''}
-                {" "}
-                {strength.weight !== 0 ? strength.weight.toFixed(1) : ''}
-              </button></li>
-            );
-          })}
-        </ul>
+        <>
+          <ul className="technologies flex">
+            {dataFiltered.map((strength) => {
+              return (
+                <li key={strength.id}><button onClick={() => { handleModal(strength); }}>
+                  {strength.name}
+                  {" "}
+                  {strength.weight !== 0 ? <FontAwesomeIcon icon={faWeightHanging} /> : ''}
+                  {" "}
+                  {strength.weight !== 0 ? strength.weight.toFixed(1) : ''}
+                </button></li>
+              );
+            })}
+          </ul>
+        </>
       );
     }
   }
