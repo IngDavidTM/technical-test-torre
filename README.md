@@ -70,7 +70,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live]()
+- [Live](https://ingdavidtm.github.io/technical-test-torre/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
