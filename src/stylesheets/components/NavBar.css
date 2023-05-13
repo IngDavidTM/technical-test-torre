@@ -1,0 +1,40 @@
+.navBar {
+  justify-content: space-between;
+  font-size: 1.3rem;
+  height: 5rem;
+  padding: 1rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  gap: 1rem;
+}
+
+.navBar a {
+  font-size: 1.2rem;
+}
+
+.navBar div {
+  align-items: center;
+  gap: 2rem;
+}
+
+.newUser {
+  position: relative;
+}
+
+.newUser input {
+  background-color: var(--secondary-hovered);
+  color: var(--background);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  border: none;
+  flex: 1 1 0;
+  width: 40%;
+}
+
+.newUser svg {
+  position: absolute;
+  right: 5%;
+}
+
+.newUser path {
+  color: var(--background);
+}

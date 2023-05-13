@@ -1,0 +1,32 @@
+.skills {
+  gap: 1rem;
+  width: 90%;
+}
+
+.level {
+  color: var(--secondary);
+}
+
+.icons {
+  font-size: 1.2rem;
+}
+
+.technologies {
+  padding: 1.4rem 0;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.technologies li button {
+  background: none;
+  border: none;
+  background-color: var(--gray-button);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+.technologies li button:hover {
+  cursor: pointer;
+  background-color: var(--secondary-hovered);
+  color: var(--background);
+}
