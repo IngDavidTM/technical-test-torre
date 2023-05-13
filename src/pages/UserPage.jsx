@@ -15,8 +15,13 @@ const UserPage = () => {
       <NavBar />
       {data.person && (
         <section className="infoSection flexColumn">
-          <Header />
-          <Skills />
+          <Header data={data} />
+          <Skills data={data}/>
+        </section>
+      )}
+      {!data.person && (
+        <section className="infoSection flexColumn">
+          <h2 className='centerText weightBold'>User not found</h2>
         </section>
       )}
     </>

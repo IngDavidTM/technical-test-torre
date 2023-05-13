@@ -3,11 +3,7 @@ import { AppContext } from '../context/AppContext'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faWeightHanging} from '@fortawesome/free-solid-svg-icons';
 
-const Technologies = ({level}) => {
-  const { data, fetchData } = useContext(AppContext);
-  useEffect(() => {
-    fetchData();
-  }, []);
+const Technologies = ({level, data}) => {
 
   if (data.strengths) {
     const dataFiltered = data.strengths.filter((strength) => {

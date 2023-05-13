@@ -11,7 +11,7 @@ export const AppProvider = ({ children }) => {
       const response = id ? await axios.get(`https://bio.torre.co/api/bios/${id}`) : await axios.get('https://bio.torre.co/api/bios/davidtamayo1112');
       setData(response.data);
     } catch (error) {
-      console.log(error);
+      setData({ person: null });
     }
   };
 

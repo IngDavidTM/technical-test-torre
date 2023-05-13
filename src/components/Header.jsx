@@ -1,12 +1,6 @@
 import "../stylesheets/components/Header.css"
-import { useContext, useEffect } from 'react'
-import { AppContext } from '../context/AppContext'
 
-const Header = () => {
-  const { data, fetchData } = useContext(AppContext);
-  useEffect(() => {
-    fetchData();
-  }, []);
+const Header = ({data}) => {
   return (
     <header className="userInfo flexColumn">
       <div className="hexagon flex">
