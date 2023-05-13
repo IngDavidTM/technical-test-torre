@@ -27,6 +27,6 @@
 
 .technologies li button:hover {
   cursor: pointer;
-  background-color: var(--secondary);
+  background-color: var(--secondary-hovered);
   color: var(--background);
 }
