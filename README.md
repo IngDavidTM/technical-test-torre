@@ -74,6 +74,8 @@
 
 It is possible that there may be issues when accessing the live version of the project, so I suggest installing the [Moesif Origin & CORS Changer extension](https://chrome.google.com/webstore/detail/moesif-origin-cors-change/digfbfaphojjndkpccljibejjbppifbc) and enabling it before opening the live version.
 
+- [Loom](https://www.loom.com/share/e1589a874e744d7e91878b6304fb07f7)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -138,7 +140,7 @@ To run the project, execute the following command:
 ## 🔭 Future Features <a name="future-features"></a>
 
 What else could I have done or improved if I had more time?
-- Given more time, there are several improvements I would make to the project. Firstly, I would address any minor issues that I have identified. Additionally, I would expand the website's navigability by adding more pages that can be accessed through the hamburger button, such as sections for work experience, education, projects, and so on. I believe that incorporating animations would also enhance the user experience, and I would work to improve the desktop version of the website. Lastly, I would like to incorporate a new feature in the modal window that displays other individuals who possess the same skill set as the searched user.
+- Given more time, there are several improvements I would make to the project. Firstly, I would address any minor issues that I have identified on the deployed application related with CORS. Additionally, I would expand the website's navigability by adding more pages that can be accessed through the hamburger button, such as sections for work experience, education, projects, and so on. I believe that incorporating animations would also enhance the user experience, and I would work to improve the desktop version of the website. Lastly, I would like to incorporate a new feature in the modal window that displays other individuals who possess the same skill set as the searched user.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
