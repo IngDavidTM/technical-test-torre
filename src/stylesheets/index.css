@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --yellow: #cddc39;
+  --primary: #ffffffe6;
+  --secondary: #a9aaab;
+  --secondary-hovered: #949596;
+  --background: #27292d;
+  --gray-button: #373b40;
+
+  font-family: Mulish, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: var(--background);
+}
