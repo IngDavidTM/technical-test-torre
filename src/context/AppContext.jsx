@@ -1,5 +1,6 @@
-import React, { createContext, useState } from 'react';
+import { createContext, useState } from 'react';
 import axios from 'axios';
+import PropTypes from 'prop-types';
 
 export const AppContext = createContext();
 
@@ -21,3 +22,7 @@ export const AppProvider = ({ children }) => {
     </AppContext.Provider>
   );
 };
+
+AppProvider.propTypes = {
+  children: PropTypes.node.isRequired,
+}

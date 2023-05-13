@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faWeightHanging} from '@fortawesome/free-solid-svg-icons';
+import PropTypes from 'prop-types';
 
 const Technologies = ({level, data,  handleModal}) => {
   if (data.strengths) {
@@ -31,5 +32,11 @@ const Technologies = ({level, data,  handleModal}) => {
     }
   }
 };
+
+Technologies.propTypes = {
+  level: PropTypes.node.isRequired,
+  data: PropTypes.node.isRequired,
+  handleModal: PropTypes.node.isRequired,
+}
 
 export default Technologies;

@@ -4,6 +4,7 @@ import { faPersonBiking, faPersonRunning, faPersonWalking, faChild } from '@fort
 import Technologies from "./Technologies";
 import { useState } from 'react';
 import Modal from "./Modal";
+import PropTypes from 'prop-types';
 
 const Skills = ({data}) => {
   const [modal, setModal] = useState(false);
@@ -40,5 +41,9 @@ const Skills = ({data}) => {
     </>
   );
 };
+
+Skills.propTypes = {
+  data: PropTypes.node.isRequired,
+}
 
 export default Skills;

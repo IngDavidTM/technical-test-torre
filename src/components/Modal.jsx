@@ -1,6 +1,7 @@
 import "../stylesheets/components/Modal.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faClose, faPersonBiking, faPersonRunning, faPersonWalking, faChild, faWeightHanging} from '@fortawesome/free-solid-svg-icons';
+import PropTypes from 'prop-types';
 
 const Modal = ({skill, data, handleModal}) => {
   const skills = {
@@ -35,7 +36,7 @@ const Modal = ({skill, data, handleModal}) => {
         <p className="weightLight"><span className="textGray">Weight: </span><FontAwesomeIcon icon={faWeightHanging} /> {skill.weight?.toFixed(1)}</p>
       </div>
       <div className="modalInfo flexColumn">
-        <h4 className="weightLight">{data.person?.name}'s experiences:</h4>
+        <h4 className="weightLight">{`${data.person?.name}'s experiences:`}</h4>
         {jobExperience.map((job) => {
           return (
             <div key={job.id}>
@@ -49,5 +50,11 @@ const Modal = ({skill, data, handleModal}) => {
     </section>
   );
 };
+
+Modal.propTypes = {
+  skill: PropTypes.node.isRequired,
+  data: PropTypes.node.isRequired,
+  handleModal: PropTypes.node.isRequired,
+}
 
 export default Modal;
