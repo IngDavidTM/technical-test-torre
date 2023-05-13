@@ -72,6 +72,8 @@
 
 - [Live](https://ingdavidtm.github.io/technical-test-torre/)
 
+It is possible that there may be issues when accessing the live version of the project, so I suggest installing the [Moesif Origin & CORS Changer extension](https://chrome.google.com/webstore/detail/moesif-origin-cors-change/digfbfaphojjndkpccljibejjbppifbc) and enabling it before opening the live version.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
