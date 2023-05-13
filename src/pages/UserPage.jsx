@@ -11,7 +11,6 @@ const UserPage = () => {
   const { data, fetchData } = useContext(AppContext);
   useEffect(() => {
     fetchData();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   const [show, setShow] = useState('main');
   const [showButton, setShowButton] = useState(true);
