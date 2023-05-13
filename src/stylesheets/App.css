@@ -18,6 +18,10 @@
   color: var(--yelow);
 }
 
+.textGray {
+  color: var(--secondary);
+}
+
 .weightLight {
   font-weight: 300;
 }
@@ -36,6 +40,10 @@
 
 .cursor {
   cursor: pointer;
+}
+
+.centerText {
+  text-align: center;
 }
 
 li {

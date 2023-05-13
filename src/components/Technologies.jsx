@@ -15,19 +15,19 @@ const Technologies = ({level}) => {
     });
     if (dataFiltered.length === 0) {
       return (
-        <p className="technologies">[Empty]</p>
+        <p className="textGray technologies">[Empty]</p>
       );
     } else {
       return (
         <ul className="technologies flex">
           {dataFiltered.map((strength) => {
             return (
-              <li><button>
+              <li key={strength.id}><button>
                 {strength.name}
                 {" "}
                 {strength.weight !== 0 ? <FontAwesomeIcon icon={faWeightHanging} /> : ''}
                 {" "}
-                {strength.weight !== 0 ? strength.weight : ''}
+                {strength.weight !== 0 ? strength.weight.toFixed(1) : ''}
               </button></li>
             );
           })}
