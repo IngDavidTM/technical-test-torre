@@ -6,14 +6,19 @@ import {faBars, faSearch, faClose} from '@fortawesome/free-solid-svg-icons';
 
 const NavBar = () => {
   const [search, setSearch] = useState(false);
+  const [newUser, setNewUser] = useState('');
   const handleSearch = () => {
     setSearch(!search);
   };
 
   const { fetchData } = useContext(AppContext);
 
-  const handleChange = (e) => {
-    fetchData(e.target.value);
+  const handleChange = () => {
+    fetchData(newUser);
+  };
+
+  const handleNewUser = (e) => {
+    setNewUser(e.target.value);
   };
 
   return (
@@ -30,8 +35,11 @@ const NavBar = () => {
       )}
       {search && (
         <div className="newUser flex">
-          <input className="search" type="text" placeholder="New user"  onChange={handleChange} />
-          <FontAwesomeIcon className="cursor" onClick={handleSearch} icon={faClose} />
+          <input className="search" type="text" placeholder="New user" onChange={handleNewUser} value={newUser} />
+          <ul className="searchButtons">
+            <FontAwesomeIcon className="cursor" onClick={handleChange} icon={faSearch} />
+            <FontAwesomeIcon className="cursor" onClick={handleSearch} icon={faClose} />
+          </ul>
         </div>
       )}
     </nav>

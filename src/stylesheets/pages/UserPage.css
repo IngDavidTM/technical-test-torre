@@ -1,12 +1,16 @@
 .main {
   height: 100vh;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .infoSection {
   margin: 2rem 1.3rem;
   gap: 2rem;
   align-items: center;
+  max-width: 1000px;
+  align-self: center;
 }
 
 .showButton {
