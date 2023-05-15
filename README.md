@@ -33,7 +33,7 @@
 
 # 📖 [Torre technical test] <a name="about-project"></a>
 
-**This is a technical test project for Torre that utilizes Vite and React, along with Pure CSS for the design and Torre's API. Its purpose is to enable users to search for a specific user and view their skills. Additionally, users can click on each skill to access further information about it.
+This is a technical test project for Torre that utilizes Vite and React, along with Pure CSS for the design and Torre's API. Its purpose is to enable users to search for a specific user and view their skills. Additionally, users can click on each skill to access further information about it.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -54,6 +54,13 @@
   </ul>
 </details>
 
+<details>
+  <summary>API</summary>
+  <ul>
+    <li><a href="https://proxy-torre.fly.dev/api/bios/">Proxy torre</a></li>
+  </ul>
+</details>
+
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
@@ -70,9 +77,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live](https://ingdavidtm.github.io/technical-test-torre/)
-
-It is possible that there may be issues when accessing the live version of the project, so I suggest installing the [Moesif Origin & CORS Changer extension](https://chrome.google.com/webstore/detail/moesif-origin-cors-change/digfbfaphojjndkpccljibejjbppifbc) and enabling it before opening the live version.
+- [Live](https://technical-test-torre-wqaf.vercel.app/)
 
 - [Loom](https://www.loom.com/share/e1589a874e744d7e91878b6304fb07f7)
 
