@@ -6,6 +6,7 @@ import Skills from '../components/Skills';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import "../stylesheets/pages/UserPage.css"
+import Experiences from '../components/Experiences';
 
 const UserPage = () => {
   const { data, fetchData } = useContext(AppContext);
@@ -33,6 +34,7 @@ const UserPage = () => {
         <section className="infoSection flexColumn">
           <Header data={data} />
           <Skills data={data}/>
+          <Experiences data={data}/>
           {showButton && (
             <div className='showButton flex'>
               <FontAwesomeIcon className="cursor" onClick={handleShow} icon={faChevronDown} />
