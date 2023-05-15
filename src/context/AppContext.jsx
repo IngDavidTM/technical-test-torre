@@ -6,7 +6,7 @@ export const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
   const [data, setData] = useState([]);
-  const url = 'https://proxy-torre.fly.dev/api/bios/';
+  const url = 'https://proxy-torre.fly.dev/proxy?url=https://bio.torre.co/api/bios/';
 
   const fetchData = async (id) => {
     try {
