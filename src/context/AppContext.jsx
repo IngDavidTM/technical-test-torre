@@ -6,7 +6,7 @@ export const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
   const [data, setData] = useState([]);
-  const url = 'https://cors-anywhere.herokuapp.com/https://torre.bio/api/bios/';
+  const url = 'https://proxy-torre.fly.dev/api/bios/';
 
   const fetchData = async (id) => {
     try {
