@@ -10,7 +10,12 @@ export const AppProvider = ({ children }) => {
 
   const fetchData = async (id) => {
     try {
-      const response = id ? await axios.get(`${url}${id}`) : await axios.get(`${url}davidtamayo1112`);
+      const response = id ? await axios.get(`${url}${id}`) : await axios.get(`${url}davidtamayo1112`, {
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,PATCH,OPTIONS',
+        },
+      });
       setData(response.data);
     } catch (error) {
       setData({ person: null });
