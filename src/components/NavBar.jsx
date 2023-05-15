@@ -3,10 +3,12 @@ import { useState,useContext } from 'react';
 import { AppContext } from '../context/AppContext'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faBars, faSearch, faClose} from '@fortawesome/free-solid-svg-icons';
+import PropTypes from 'prop-types';
 
-const NavBar = () => {
+const NavBar = ({setLoading}) => {
   const [search, setSearch] = useState(false);
   const [newUser, setNewUser] = useState('');
+  
   const handleSearch = () => {
     setSearch(!search);
   };
@@ -14,7 +16,13 @@ const NavBar = () => {
   const { fetchData } = useContext(AppContext);
 
   const handleChange = () => {
-    fetchData(newUser);
+    setLoading(true);
+    fetchData(newUser)
+    .then(() => setLoading(false))
+    .catch((error) => {
+      console.error('Error fetching data:', error);
+      setLoading(false);
+    });
   };
 
   const handleNewUser = (e) => {
@@ -45,5 +53,9 @@ const NavBar = () => {
     </nav>
   );
 };
+
+NavBar.propTypes = {
+  setLoading: PropTypes.node.isRequired,
+}
 
 export default NavBar;

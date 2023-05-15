@@ -9,8 +9,15 @@ import "../stylesheets/pages/UserPage.css"
 
 const UserPage = () => {
   const { data, fetchData } = useContext(AppContext);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetchData();
+    setLoading(true);
+    fetchData()
+      .then(() => setLoading(false))
+      .catch((error) => {
+        console.error('Error fetching data:', error);
+        setLoading(false);
+      });
   }, []);
   const [show, setShow] = useState('main');
   const [showButton, setShowButton] = useState(true);
@@ -21,8 +28,8 @@ const UserPage = () => {
 
   return (
     <main className={show}>
-      <NavBar />
-      {data.person && (
+      <NavBar  setLoading={setLoading} />
+      {data.person && !loading && (
         <section className="infoSection flexColumn">
           <Header data={data} />
           <Skills data={data}/>
@@ -33,9 +40,14 @@ const UserPage = () => {
           )}
         </section>
       )}
-      {!data.person && (
+      {(!data.person && !loading) && (
         <section className="infoSection flexColumn">
           <h2 className='centerText weightBold'>User not found</h2>
+        </section>
+      )}
+      {loading && (
+        <section className="infoSection flexColumn">
+          <h2 className='centerText weightBold'>Loading...</h2>
         </section>
       )}
     </main>
