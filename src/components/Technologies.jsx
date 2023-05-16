@@ -34,9 +34,9 @@ const Technologies = ({level, data,  handleModal}) => {
 };
 
 Technologies.propTypes = {
-  level: PropTypes.node.isRequired,
-  data: PropTypes.node.isRequired,
-  handleModal: PropTypes.node.isRequired,
+  level: PropTypes.string.isRequired,
+  data: PropTypes.object.isRequired,
+  handleModal: PropTypes.func.isRequired,
 }
 
 export default Technologies;

@@ -21,6 +21,7 @@
   padding: 1.5rem 1.3rem;
   border-bottom: 1px solid var(--gray-button);
   gap: 1rem;
+  align-items: center;
 }
 
 @media only screen and (min-width: 768px) {

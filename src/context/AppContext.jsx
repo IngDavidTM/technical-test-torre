@@ -6,10 +6,11 @@ export const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
   const [data, setData] = useState([]);
+  const url = 'https://proxy-torre.fly.dev/api/bios/';
 
   const fetchData = async (id) => {
     try {
-      const response = id ? await axios.get(`https://bio.torre.co/api/bios/${id}`) : await axios.get('https://bio.torre.co/api/bios/davidtamayo1112');
+      const response = id ? await axios.get(`${url}${id}`) : await axios.get(`${url}davidtamayo1112`);
       setData(response.data);
     } catch (error) {
       setData({ person: null });

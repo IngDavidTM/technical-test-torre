@@ -21,20 +21,37 @@
 }
 
 .newUser input {
-  background-color: var(--secondary-hovered);
-  color: var(--background);
+  background: none;
+  color: var(--secondary);
   padding: 0.5rem 1rem;
-  border-radius: 1rem;
-  border: none;
+  border: 1px solid var(--secondary);
   flex: 1 1 0;
   width: 40%;
+  border-radius: 0.2rem;
+  height: 3rem;
+  font-size: 1rem;
 }
 
-.newUser svg {
+.newUser input::placeholder {
+  color: var(--secondary);
+  font-size: 1rem;
+}
+
+.newUser input:focus {
+  outline: 1px solid var(--yellow);
+  border: none;
+}
+
+.searchButtons {
   position: absolute;
   right: 5%;
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+  z-index: 999;
+  font-size: 1rem;
 }
 
 .newUser path {
-  color: var(--background);
+  color: var(--secondary);
 }
