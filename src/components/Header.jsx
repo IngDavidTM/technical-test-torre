@@ -13,7 +13,7 @@ const Header = ({data}) => {
 };
 
 Header.propTypes = {
-  data: PropTypes.node.isRequired,
+  data: PropTypes.object.isRequired,
 }
 
 export default Header;

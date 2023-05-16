@@ -43,7 +43,7 @@ const Skills = ({data}) => {
 };
 
 Skills.propTypes = {
-  data: PropTypes.node.isRequired,
+  data: PropTypes.object.isRequired,
 }
 
 export default Skills;
