@@ -2,9 +2,7 @@ import PropTypes from 'prop-types';
 import "../stylesheets/components/Experiences.css";
 
 const Experiences = ({data}) => {
-  const jobExperience = data.experiences.filter((job) => {
-    return job.category === 'jobs';
-  });
+  const jobExperience = data.experiences
   return (
     <div className="experiences flexColumn">
       <h3 className="weightLight">{`${data.person?.name}'s experiences:`}</h3>
@@ -22,7 +20,7 @@ const Experiences = ({data}) => {
 }
 
 Experiences.propTypes = {
-  data: PropTypes.node.isRequired,
+  data: PropTypes.object.isRequired,
 }
 
 export default Experiences;

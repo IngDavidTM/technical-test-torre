@@ -55,7 +55,7 @@ const NavBar = ({setLoading}) => {
 };
 
 NavBar.propTypes = {
-  setLoading: PropTypes.node.isRequired,
+  setLoading: PropTypes.func.isRequired,
 }
 
 export default NavBar;
