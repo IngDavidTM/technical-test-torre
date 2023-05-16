@@ -77,7 +77,7 @@ This is a technical test project for Torre that utilizes Vite and React, along w
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live](https://technical-test-torre-wqaf.vercel.app/)
+- [Live](https://technical-test-torre-wqaf-o7vbhev74-ingdavidtm.vercel.app/)
 
 - [Loom](https://www.loom.com/share/e1589a874e744d7e91878b6304fb07f7)
 
